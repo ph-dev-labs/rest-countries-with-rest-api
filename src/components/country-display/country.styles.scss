@@ -1,0 +1,77 @@
+.country-layout {
+    background-color: hsl(209, 23%, 22%);
+    height: 250px;
+    width: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 9px;
+   .img-container {
+       margin-top: .4px;
+       overflow: hidden;
+    .flag {
+        height: 127px;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 3px;
+    }
+   }
+    .country-name {
+        font-size: 14px;
+        font-family: "Nunito Sans";
+        color: hsl(0, 0%, 100%);
+        font-weight: 800;
+        margin: 5px;
+        margin-left: 10px;
+    }
+    .country-population {    
+        font-size: 12px;
+        font-family: "Nunito Sans";
+        color: hsl(0, 0%, 100%);
+        margin: 3px;
+        margin-left: 10px;
+        font-weight: 600;
+        .population {
+            font-size: 10px;
+            font-family: "Nunito Sans";
+            color: hsl(0, 0%, 98%);
+            font-weight: 300;
+            margin-left: 5px;
+        }
+    }
+    .country-region {
+        font-size: 12px;
+        font-family: "Nunito Sans";
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        margin: 3px;
+        margin-left: 10px;
+
+        .region {
+            font-size: 10px;
+            font-family: "Nunito Sans";
+            color: hsl(0, 0%, 98%);
+            font-weight: 300;
+            margin-left: 5px;
+        }
+    }
+
+    .country-capital {
+        font-size: 12px;
+        font-family: "Nunito Sans";
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        margin-left: 10px;
+
+        .capital {
+            font-size: 10px;
+            font-family: "Nunito Sans";
+            color: hsl(0, 0%, 98%);
+            font-weight: 300;
+            margin-left: 5px;
+        }
+    }
+
+}

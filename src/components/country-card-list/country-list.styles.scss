@@ -1,0 +1,8 @@
+.country-list {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 50px;
+}
