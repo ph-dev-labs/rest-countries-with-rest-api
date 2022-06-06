@@ -1,0 +1,27 @@
+.filter {
+    margin: 38px;
+    margin-right: 50px;
+
+    select {
+        width: 130px;
+        font-family: "Nunito Sans";
+        font-size: 14px;
+        height: 36px;
+        outline: none;
+        border: none;
+        box-shadow: 1px 1px hsl(207, 26%, 17%);
+        background-color: hsl(207, 26%, 17%);
+        color: hsl(0, 0%, 98%);
+    }
+
+
+        option {
+            font-family: "Nunito Sans";
+            font-size: 14px;
+            color: hsl(0, 0%, 98%);
+            font-weight: 600;
+            outline: none;
+            border: none;
+        }
+    
+}
