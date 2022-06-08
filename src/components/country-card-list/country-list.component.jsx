@@ -4,6 +4,7 @@ import CountryLayout from "../country-display/country.component"
 
 
 export default function CountryList(props) {
+    console.log(props)
     const countryDetails = props.country.map(countries => 
         <CountryLayout
         flag={countries.flags.png}
