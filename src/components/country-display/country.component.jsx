@@ -2,23 +2,24 @@ import React from "react";
 import "./country.styles.scss"
 
 export default function CountryLayout(props) {
+    console.log(props)
     return(
-        <div className="country-layout">
+        <div className={props.darkmode ? "country-layout" : "country-layout-light"}>
             <div className="img-container">
-                <img src={props.flag} className="flag" alt="FLAG" />
+                <img src={props.flag} className={props.darkmode ? "flag" : "flag-light"} alt="FLAG" />
             </div>
-            <h1 className="country-name">{props.name}</h1>
-            <div className="country-population">
+            <h1 className={props.darkmode ? "country-name" : "country-name-light"}>{props.name}</h1>
+            <div className={props.darkmode ? "country-population" : "country-population-light"}>
                 Population:
-                <span className="population">{props.population}</span>
+                <span className={props.darkmode ? "population" : "population-light" }>{props.population}</span>
             </div>
-             <div className="country-region">
+             <div className={props.darkmode ? "country-region" : "country-region-light"}>
                  Region:
-                 <span className="region">{props.region}</span>
+                 <span className={props.darkmode ? "region" : "region-light"}>{props.region}</span>
             </div>
-            <div className="country-capital">
+            <div className={props.darkmode ? "country-capital" : "country-capital-light"}>
                 Capital:
-                <span className="capital">{props.capital}</span>
+                <span className={props.darkmode ? "capital" : "capital-light"}>{props.capital}</span>
             </div>
             
         </div>

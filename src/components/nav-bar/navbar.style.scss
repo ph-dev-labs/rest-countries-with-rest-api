@@ -5,6 +5,7 @@
     width: 100vw;
     background-color: hsl(209, 23%, 22%);
     justify-content: space-between;
+    box-shadow: 1px 1px;
     
 
     .nav-title {
@@ -35,12 +36,58 @@
             color: hsl(0, 0%, 100%);
             font-size: 12px;
             margin-right: 15px;
-            font-weight: 300;
+            font-weight: 600;
             font-family: "Nunito Sans";
+            cursor: pointer;
         }
     
     }
 
 
+
+}
+
+
+.nav-bar-light {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100vw;
+    justify-content: space-between;
+    box-shadow: 1px 1px;
+
+    .nav-title-light {
+        font-size: 16px;
+        font-family: "Nunito Sans";
+        font-weight: 800;
+        color: hsl(200, 15%, 8%);
+        margin-left: 38px;
+    }
+
+    
+    .mode-toogle {
+        display: flex;
+        flex-direction: row;
+        margin: 13px;
+        justify-content: space-around;
+
+        ion-icon {
+            font-size: 14px;
+            color: hsl(200, 15%, 8%);
+            margin-top: 2.5px;
+            margin-right: 9px;
+        }
+
+        .mode-caption-light {
+            font-size: 12px;
+            margin-right: 15px;
+            font-weight: 600;
+            font-family: "Nunito Sans";
+            cursor: pointer;
+            color: hsl(200, 15%, 8%);
+        }
+
+    }
 
 }

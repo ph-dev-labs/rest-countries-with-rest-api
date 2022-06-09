@@ -11,6 +11,7 @@ export default function HomePage() {
     const [filteredContries, setFilteredContries] = useState([]);
     const [searchField, setSearchField] = useState("");
     const [region, setRegion] = useState("");
+    const [darkmode, setDarkmode] = useState(true)
     useEffect(() => {
         fetch("https://restcountries.com/v3.1/all")
         .then(response => response.json())
@@ -18,7 +19,6 @@ export default function HomePage() {
     }, [])
 
     useEffect(() => {
-        console.log(region)
         const response =  allCountries.filter(countries => 
             searchField ? countries.name.official.toLowerCase().includes(searchField.toLowerCase())
             :
@@ -38,17 +38,22 @@ export default function HomePage() {
     }
 
 
+    function onClick() {
+        setDarkmode(prevState => prevState = !prevState)
+    }
+
+
    
 
 
     return(
-        <div className="home-page">
-            <Navbar />
+        <div className={darkmode ? "homepage" : "homepage-light"}>
+            <Navbar onClick={onClick} darkmode={darkmode}/>
             <div className="filter-section">
-                <SearchField onSearchChange={onSearchChange}/>
-                <Filter onChange={onRegionChange}/>
+                <SearchField onSearchChange={onSearchChange} darkmode={darkmode}/>
+                <Filter onChange={onRegionChange} darkmode={darkmode}/>
             </div>
-            <CountryList country={filteredContries.length > 0 ? filteredContries: allCountries}/>
+            <CountryList country={filteredContries.length > 0 ? filteredContries: allCountries} darkmode={darkmode}/>
         </div>
     )
 }

@@ -2,7 +2,7 @@
     margin: 38px;
     margin-right: 50px;
 
-    select {
+    .select {
         width: 130px;
         font-family: "Nunito Sans";
         font-size: 14px;
@@ -12,6 +12,7 @@
         background-color: hsl(209, 23%, 22%);
         color: hsl(0, 0%, 98%);
         margin-top: 10px;
+        box-shadow: 1px 1px;
     }
 
 
@@ -24,4 +25,22 @@
             border: none;
         }
     
+}
+
+.filter-light {
+    margin: 38px;
+    margin-right: 50px;
+}
+
+.select-light {
+    width: 130px;
+        font-family: "Nunito Sans";
+        font-size: 14px;
+        height: 36px;
+        outline: none;
+        border: none;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(200, 15%, 8%);
+        margin-top: 10px;
+        box-shadow: 1px 1px;
 }

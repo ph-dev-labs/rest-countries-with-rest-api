@@ -17,11 +17,11 @@
             border-radius: 4px;
             outline: none;
             border: none;
-            box-shadow: 2px 3px hsl(207, 26%, 17%);
             background-color: hsl(209, 23%, 22%);
             color: hsl(0, 0%, 98%);
             font-weight: 600;
             padding-left: 45px;
+            box-shadow: 1px 1px;
         }
     
         ion-icon {
@@ -31,6 +31,28 @@
             position: absolute;
             color: hsl(0, 0%, 98%);
         }
+
+  
     }
  
 }
+
+
+.search-field-light {
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    height: 45px;
+    margin: 15px;
+    width: 290px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    color: (200, 15%, 8%);
+    font-weight: 600;
+    padding-left: 45px;
+    box-shadow: .5px .5px;
+    
+}
+
+
