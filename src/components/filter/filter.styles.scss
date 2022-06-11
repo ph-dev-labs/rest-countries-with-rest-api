@@ -44,3 +44,26 @@
         margin-top: 10px;
         box-shadow: 1px 1px;
 }
+
+
+    @media (max-width: 768px) {
+        .filter {
+            margin-left: 10px;
+        }
+        .filter-light {
+            margin-left: 10px;
+        }
+    } 
+
+    @media (max-width: 600px) {
+        .filter {
+            margin-left: 59px;
+            margin-bottom: 50px;
+        }
+        .filter-light {
+            margin-left: 89px;
+            margin-bottom: 70px;
+        }
+    }
+
+   

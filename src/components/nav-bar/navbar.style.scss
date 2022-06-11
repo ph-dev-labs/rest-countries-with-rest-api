@@ -91,3 +91,22 @@
     }
 
 }
+
+// media queries tablet
+
+
+.nav-bar {
+
+   @media (max-width: 768px) {
+       width: 100%;
+   } 
+
+}
+
+.nav-bar-light {
+
+   @media (max-width: 768px) {
+       width: 100%;
+   } 
+
+}

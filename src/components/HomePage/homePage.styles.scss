@@ -27,3 +27,31 @@
         justify-content: space-between;
     }
 }
+
+
+
+    @media (max-width: 768px) {
+        .homepage {
+            width: 100vw;
+            .filter-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+
+        .homepage-light{
+            width: 100vw;
+
+            .filter-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    } 
+ 
+    
+
