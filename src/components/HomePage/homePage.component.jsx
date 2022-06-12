@@ -5,6 +5,7 @@ import SearchField from "../search-field/search-field.component";
 import Filter from "../filter/filter.component";
 import CountryList from "../country-card-list/country-list.component";
 
+
 export default function HomePage() {
 
     const [allCountries, setAllCountries] = useState([]);
@@ -41,6 +42,9 @@ export default function HomePage() {
     function onClick() {
         setDarkmode(prevState => prevState = !prevState)
     }
+
+
+    
 
 
    

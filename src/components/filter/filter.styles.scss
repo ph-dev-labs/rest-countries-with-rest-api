@@ -59,10 +59,18 @@
         .filter {
             margin-left: 59px;
             margin-bottom: 50px;
+            .select {
+                height: 35px;
+                width: 139px;
+            }
         }
         .filter-light {
             margin-left: 89px;
             margin-bottom: 70px;
+            .select-light {
+                height: 35px;
+                width: 139px;
+            }
         }
     }
 

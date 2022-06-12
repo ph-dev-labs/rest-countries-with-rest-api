@@ -110,3 +110,42 @@
    } 
 
 }
+
+@media (max-width: 600px) {
+    .nav-bar {
+        .nav-title {
+            font-size: 13px;
+            align-items: center;
+            justify-items: center;
+            margin-top: 15px;
+            margin-left: 17px;
+        }
+
+        .mode-toogle {
+            margin-right: 1px;
+            .mode-caption{
+                font-size: 11px;
+                margin-top: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-bar-light {
+        .nav-title-light {
+            font-size: 13px;
+            align-items: center;
+            justify-items: center;
+            margin-top: 15px;
+            margin-left: 17px;
+        }
+        .mode-toogle {
+            margin-right: 1px;
+            .mode-caption-light {
+                font-size: 11px;
+                margin-top: 2px;
+            }
+        }
+    }
+}
